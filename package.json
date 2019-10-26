@@ -1,0 +1,21 @@
+{
+  "name": "modern_portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Piotr Gapski",
+  "license": "MIT",
+  "dependencies": {
+    "fullpage.js": "^3.0.7",
+    "gh-pages": "^1.2.0",
+    "node-sass": "^4.9.2"
+  },
+  "keywords": [
+    "portfolio",
+    "Piotr Gapski"
+  ]
+}

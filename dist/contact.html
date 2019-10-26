@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" />
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet"/>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <!-- font awesome icons -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- <link rel="icon" type="image/png" href="img/icons/favicon.ico"/> -->
+    
+  <!--===============================================================================================-->
+    <!-- <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css"> -->
+  
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+  
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+  <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+  <!--===============================================================================================-->
+    
+    <title>Contact me</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+      </div>
+
+      <nav class="menu">
+        <div class="menu-branding">
+          <div class="portrait"></div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">
+              About Me
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="work.html" class="nav-link">
+              My Work
+            </a>
+          </li>
+          <li class="nav-item current">
+            <a href="contact.html" class="nav-link">
+              How To Reach Me
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <header>
+      <div class="container_">
+        <nav id="navigation">
+          <!-- <a href="#" class="logo">LOGO</a> -->
+          
+          </a>
+          <ul class="menu-navigation">
+              <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
+              <li><a href="about.html"><i class="fas fa-portrait"></i>About me</a></li>
+              <li><a href="work.html"><i class="fas fa-briefcase"></i>Projects</a></li>
+              <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact me</a></li>
+           
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+<div class="empty-header"></div>
+
+  <div class="container-contact100">
+    <div class="wrap-contact100">
+      <div class="contact100-pic js-tilt" data-tilt>
+        <img src="img/paper-plane.png" alt="IMG">
+      </div>
+
+      <form class="contact100-form validate-form">
+        <span class="contact100-form-title">
+          <div class="contact-title">Get in touch</div>
+            <ul class="text hidden">
+                <li class="ghost">G</li>
+                <li class="ghost">e</li>
+                <li class="ghost">t</li>
+                
+                <li class="spaced"></li>
+                <li class="ghost">i</li>
+                <li class="ghost">n</li>
+                
+                <li class="spaced"> </li>
+                <li class="ghost">t</li>
+                <li class="ghost">o</li>
+                <li class="ghost">u</li>
+                <li class="ghost">c</li>
+                <li class="ghost">h</li>
+
+                <li class="spaced"> </li>
+                <li class="ghost">w</li>
+                <li class="ghost">i</li>
+                <li class="ghost">t</li>
+                <li class="ghost">h</li>
+                
+                <li class="spaced"> </li>
+                <li class="ghost">m</li>
+                <li class="ghost">e</li>
+                
+              </ul>
+        </span>
+        
+
+        <div class="wrap-input100 validate-input" data-validate = "Name is required">
+          <input class="input100" type="text" name="name" placeholder="Name" autocomplete="off">
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-user" aria-hidden="true"></i> 
+          </span>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Valid email is required">
+          <input class="input100" type="text" name="email" placeholder="Email" autocomplete="off">
+          <span class="focus-input100"></span>
+          <span class="symbol-input100">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+          </span>
+        </div>
+
+        <div class="wrap-input100 validate-input" data-validate = "Message is required">
+          <textarea class="input100" name="message" placeholder="Message"></textarea>
+          <span class="focus-input100"></span>
+        </div>
+
+        <div class="container-contact100-form-btn">
+          <button class="contact100-form-btn">
+            Send
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  
+        <div id="map"></div>
+ <!-- Hide controls until they are moved into the map. -->
+ <div style="display:none">
+    <div class="controls zoom-control">
+      <button class="zoom-control-in" title="Zoom In">+</button>
+      <button class="zoom-control-out" title="Zoom Out">−</button>
+    </div>
+    <div class="controls maptype-control maptype-control-is-map">
+      <button class="maptype-control-map"
+              title="Show road map">Map</button>
+      <button class="maptype-control-satellite"
+              title="Show satellite imagery">Satellite</button>
+    </div>
+    <div class="controls fullscreen-control">
+      <button title="Toggle Fullscreen">
+        <div class="fullscreen-control-icon fullscreen-control-top-left"></div>
+        <div class="fullscreen-control-icon fullscreen-control-top-right"></div>
+        <div class="fullscreen-control-icon fullscreen-control-bottom-left"></div>
+        <div class="fullscreen-control-icon fullscreen-control-bottom-right"></div>
+      </button>
+    </div>
+  </div>
+   
+    <footer class="footer-distributed">
+      <div class="footer-left">
+        <h3>Company<span>logo</span></h3>
+
+        <p class="footer-links">
+          <a href="#">Home</a>
+          |
+          <a href="#">Blog</a>
+          |
+          <a href="#">Pricing</a>
+          |
+          <a href="#">About</a>
+          |
+          <a href="#">Faq</a>
+          |
+          <a href="#">Contact</a>
+        </p>
+      </div>
+
+      <div class="footer-center">
+        <div class="footer-contact">
+      <div class="foooter-localization">
+        <i class="fa fa-map-marker"></i>
+        <p><span>ul. Piastowska 38</span> Poznań, Poland</p>
+      </div>
+
+      
+        <i class="fa fa-envelope"></i>
+        <p>
+          <a href="mailto:PiotrGapski96@gmail.com">PiotrGapski96@gmail.com</a>
+        </p>
+      </div>
+    </div>
+
+      <div class="footer-right">
+        <p class="footer-company-about">
+          <span>About the company</span>
+          Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce
+          euismod convallis velit, eu auctor lacus vehicula sit amet.
+        </p>
+
+        <div class="footer-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/piotr-gapski-6bb62b189/"
+            ><i class="fa fa-linkedin"></i
+          ></a>
+          <a href="https://github.com/PiotrG1996"
+            ><i class="fa fa-github"></i
+          ></a>
+        </div>
+      </div>
+      <p class="footer-company-name">Piotr Gapski &copy; 2019</p>
+    </footer>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCz3WLXp9tXwIMLWgfHBfCVuWMbkVA3zg8&callback=initMap" async defer></script>
+    
+   
+    <script src="js/googlemaps.js"></script>
+    <script src="js/main.js"></script>
+     <script src="js/contact.js"></script>
+
+
+    <script src="vendor/tilt/tilt.jquery.min.js"></script>
+    <!-- <script>
+      $('.js-tilt').tilt({
+        scale: 1.1
+      })
+    </script> -->
+ 
+  </body>
+</html>
