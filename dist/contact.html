@@ -98,7 +98,7 @@
         <img src="img/paper-plane.png" alt="IMG">
       </div>
 
-      <form class="contact100-form validate-form">
+      <form class="contact100-form validate-form" action="POST" data-netlify="true">
         <span class="contact100-form-title">
           <div class="contact-title">Get in touch</div>
             <ul class="text hidden">
@@ -150,6 +150,10 @@
         <div class="wrap-input100 validate-input" data-validate = "Message is required">
           <textarea class="input100" name="message" placeholder="Message"></textarea>
           <span class="focus-input100"></span>
+        </div>
+
+        <div class="field">
+          <div data-netlify-recaptcha="true"></div>
         </div>
 
         <div class="container-contact100-form-btn">
