@@ -175,6 +175,7 @@ iframe {
   font-size: 25px;
   color: #fae196;
   line-height: 1.2;
+  text-align: center;
 }
 
 /*****************************************************/
@@ -182,7 +183,7 @@ iframe {
 .text {
   position: relative;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translateX(-50%) translateY(-50%);
   list-style: none;
   border-bottom: 0;
@@ -397,20 +398,20 @@ textarea.input100 {
   .wrap-contact100 {
     border: 5px solid black;
   }
-}
-
-@media (max-width: 576px) {
-  .wrap-contact100 {
-    padding: 100px 15px 157px 15px;
-  }
   .text {
     display: none;
   }
   .contact-title {
     display: inline-block;
     position: relative;
-    left: 35%;
   }
+}
+
+@media (max-width: 576px) {
+  .wrap-contact100 {
+    padding: 100px 15px 157px 15px;
+  }
+  
 }
 
 /*------------------------------------------------------------------
