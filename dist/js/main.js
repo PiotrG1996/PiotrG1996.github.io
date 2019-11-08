@@ -1,6 +1,6 @@
-$(window).on("load",function(){
-  $(".loader-wrapper").fadeOut("slow");
-});
+// $(window).on("load",function(){
+//   $(".loader-wrapper").fadeOut("slow");
+// });
 
 // Select DOM Items
 const menuBtn = document.querySelector(".menu-btn");
