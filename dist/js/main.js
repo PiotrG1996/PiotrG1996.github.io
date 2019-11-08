@@ -1,3 +1,7 @@
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut("slow");
+});
+
 // Select DOM Items
 const menuBtn = document.querySelector(".menu-btn");
 const menu = document.querySelector(".menu");
@@ -120,6 +124,8 @@ document.addEventListener(
   },
   false
 );
+
+
 
 // back to top
 // $(".logo").on("click", function(e) {
