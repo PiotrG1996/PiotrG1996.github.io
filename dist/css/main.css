@@ -251,11 +251,13 @@ body {
     /* Footer links */ }
     .footer-distributed .footer-left h3 {
       color: #ffffff;
-      font: normal 36px "Cookie", cursive;
-      margin: 0; }
+      font-family: 'Yellowtail', cursive;
+      font-size: 48px;
+      margin: 0; 
+    } 
       .footer-distributed .footer-left h3 span {
         color: #5383d3; }
-    .footer-distributed .footer-left .footer-links {
+    /* .footer-distributed .footer-left .footer-links {
       color: #ffffff;
       margin: 20px 0 12px;
       padding: 0; }
@@ -263,7 +265,32 @@ body {
         display: inline-block;
         line-height: 1.8;
         text-decoration: none;
-        color: inherit; }
+        color: inherit; } */
+
+
+        .footer-distributed .footer-left .footer-icons {
+          margin-top: 25px;
+          padding-left: 10px;
+          display: flex;
+          align-items: left;
+          justify-content: left; 
+        }
+          .footer-distributed .footer-left .footer-icons i {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            border-radius: 2px;
+            font-size: 35px;
+            color: #ffd152;
+            text-align: left;
+            line-height: 35px;
+            margin-right: 20px; 
+          }
+            .footer-distributed .footer-left .footer-icons i:hover {
+              color: antiquewhite; 
+            }
+
+            
   .footer-distributed .footer-center {
     width: 35%;
     display: inline-block; }
@@ -308,30 +335,66 @@ body {
         font-size: 14px;
         font-weight: bold;
         margin-bottom: 20px; }
-    .footer-distributed .footer-right .footer-icons {
-      margin-top: 25px;
-      display: flex;
-      align-items: center;
-      justify-content: center; }
-      .footer-distributed .footer-right .footer-icons i {
-        width: 35px;
-        height: 35px;
-        cursor: pointer;
-        border-radius: 2px;
-        font-size: 35px;
-        color: #ffd152;
-        text-align: center;
-        line-height: 35px;
-        margin-right: 20px; }
-        .footer-distributed .footer-right .footer-icons i:hover {
-          color: antiquewhite; }
+    
   .footer-distributed .footer-company-name {
     display: flex;
     justify-content: center;
     color: #8f9296;
     font-size: 14px;
+    font-style: italic;
     font-weight: normal;
-    margin: 10px; }
+    margin: 10px; 
+  }
+  hr.hr-style { 
+    margin-top: 20px;
+    border: 0; 
+    height: 1px; 
+    background-image: -webkit-linear-gradient(left, #292C2F, #ffd152, #292C2F);
+    background-image: -moz-linear-gradient(left, #292C2F, #ffd152, #292C2F);
+    background-image: -ms-linear-gradient(left, #292C2F, #ffd152, #292C2F);
+    background-image: -o-linear-gradient(left, #292C2F, #ffd152, #292C2F); 
+  }
+  q,
+blockquote {
+  quotes: "“" "”" "‘" "’";
+  font-style: italic;
+}
+
+.french {
+  quotes: "«" "»" "‹" "›";
+}
+
+q:before,
+blockquote:before {
+  content: open-quote;
+}
+
+q:after,
+blockquote:after {
+  content: close-quote;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  color: gold;
+  font-size: 1.2em;
+}
+
+blockquote {
+  font-family: 'Oswald', sans-serif;
+  margin-left: 0;
+  padding-left: 1em;
+  border-left: 5px solid goldenrod;
+  padding-bottom: 5px;;
+}
+
+.quote {
+  position: relative;
+  text-align: right;
+  padding-top: 15px;
+}
 
 /* If you don't want the footer to be responsive, remove these media queries */
 @media (max-width: 880px) {
@@ -344,6 +407,14 @@ body {
     width: 100%;
     margin-bottom: 40px;
     text-align: center; }
+
+    .footer-distributed .footer-left .footer-icons {
+      margin-top: 25px;
+      padding-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center; 
+    }
   .footer-distributed .footer-center i {
     margin-left: 0; } }
 
