@@ -4,8 +4,7 @@ const menu = document.querySelector(".menu");
 const menuNav = document.querySelector(".menu-nav");
 const menuBranding = document.querySelector(".menu-branding");
 const navItems = document.querySelectorAll(".nav-item");
-const body = document.getElementsByTagName("body");
-// const disableScrolling = document.querySelector("body");
+const body = document.getElementsByTagName("body")[0];
 
 // Set Initial State Of Menu
 let showMenu = false;
@@ -33,10 +32,6 @@ function toggleMenu() {
     showMenu = false;
   }
 }
-
-
-
-
 
 // SHOW/HIDE NAV
 
@@ -72,6 +67,15 @@ function hasScrolled() {
       .addClass("hide-nav");
     $(".nav-toggle").removeClass("open");
     $(".menu-navigation").removeClass("collapse");
+
+    // Mobile menu fix
+    if (showMenu && didScroll) {
+      $("header")
+        .removeClass("hide-nav")
+        .addClass("show-nav");
+        body.style.overflow = 'hidden';
+    }
+
   } else {
     // Scroll Up
     if (st + $(window).height() < $(document).height()) {
@@ -81,14 +85,19 @@ function hasScrolled() {
     }
   }
 
+    
+  
+
   lastScrollTop = st;
 }
+
+
 
 //  Initialize Swiper
 document.addEventListener(
   "DOMContentLoaded",
   function() {
-    var swiper = new Swiper(".swiper-container", {
+    const swiper = new Swiper(".swiper-container", {
       effect: "coverflow",
 
       grabCursor: true,
@@ -121,19 +130,7 @@ document.addEventListener(
   false
 );
 
-// back to top
-// $(".logo").on("click", function(e) {
-//   e.preventDefault();
-//   $(".nav-toggle").removeClass("open");
-//   $(".menu-navigation").removeClass("collapse");
-//   $("html, body").animate(
-//     {
-//       scrollTop: 0
-//     },
-//     750,
-//     "easeInOutQuad"
-//   );
-// });
+
 
 // smooth scroll between sections
 // $('a[href^="#"]').on("click", function(event) {
