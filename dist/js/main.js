@@ -18,6 +18,8 @@ function toggleMenu() {
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
     navItems.forEach(item => item.classList.add("show"));
+    body.style.overflow = 'hidden';
+
 
     // Set Menu State
     showMenu = true;
@@ -27,6 +29,8 @@ function toggleMenu() {
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
     navItems.forEach(item => item.classList.remove("show"));
+    body.style.overflow = 'auto';
+
 
     // Set Menu State
     showMenu = false;
@@ -68,6 +72,7 @@ function hasScrolled() {
     $(".nav-toggle").removeClass("open");
     $(".menu-navigation").removeClass("collapse");
 
+
     // Mobile menu fix
     if (showMenu && didScroll) {
       $("header")
@@ -82,6 +87,7 @@ function hasScrolled() {
       $("header")
         .removeClass("hide-nav")
         .addClass("show-nav");
+
     }
   }
 
