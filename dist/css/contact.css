@@ -240,7 +240,7 @@ input.input100 {
 input:-webkit-autofill {
   -webkit-text-fill-color: #fae196 !important;
   border: 5px solid black !important;
-}
+} 
 
 /* ********************************* */
 input.input100[name="email"] {
