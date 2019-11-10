@@ -228,6 +228,21 @@ input.input100 {
   border: 5px solid black;
 }
 
+/* Fix auto complete in input forms*/
+  input.input100:-webkit-autofill,
+  input.input100:-webkit-autofill:hover, 
+  input.input100:-webkit-autofill:focus, 
+  input.input100:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #333 inset !important;
+    border: 5px solid black !important;
+}
+
+input:-webkit-autofill {
+  -webkit-text-fill-color: #fae196 !important;
+  border: 5px solid black !important;
+}
+
+/* ********************************* */
 input.input100[name="email"] {
   padding: 0 30px 0 54px;
 }
