@@ -28,7 +28,7 @@ $(document).ready(function() {
     }
 
     var top = status.offset.y;
-    //console.log(top);
+    console.log(top);
     var visibleCenterVertical = 0;
     visibleCenterVertical = top;
 

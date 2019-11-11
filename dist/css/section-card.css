@@ -269,6 +269,10 @@ textarea {
   font-size: 15px;
   overflow: hidden;
 }
+
+.scroll-list__item p.description-wrapper {
+height: 180px;
+}
 .scroll-list__item .description .btn {
   text-transform: uppercase;
   background-color: inherit;
@@ -340,4 +344,10 @@ textarea {
   .scroll-list {
     margin-top: 24px;
   }
+}
+
+@media screen and (min-width: 1200px) {
+  .scroll-list__item p.description-wrapper {
+    height: 210px;
+    }
 }
