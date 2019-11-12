@@ -66,7 +66,7 @@ $(function() {
   $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
-    if (scroll >= 10) {
+    if (scroll >= 900) {
       text.removeClass("hidden");
     } else {
       text.addClass("hidden");
