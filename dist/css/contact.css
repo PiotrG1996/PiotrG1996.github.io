@@ -424,13 +424,7 @@ textarea.input100 {
   .wrap-contact100 {
     border: 5px solid black;
   }
-  .text {
-    display: none;
-  }
-  .contact-title {
-    display: inline-block;
-    position: relative;
-  }
+  
 }
 
 @media (max-width: 576px) {

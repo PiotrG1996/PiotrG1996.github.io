@@ -74,13 +74,16 @@ $(function() {
   });
 });
 
-// contact mobile title
 $(function() {
-  var title = $(".contact-title");
-  $(window).width(function() {
-    if ($(window).width() < 900) {
-      title.removeClass("hidden");
+  var text = $(".text");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (screen.width < 700 && scroll >= 700) {
+      text.removeClass("hidden");
     } else {
+      text.addClass("hidden");
     }
   });
 });
+
