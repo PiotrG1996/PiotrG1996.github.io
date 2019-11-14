@@ -292,22 +292,6 @@
    
   }
 
-/* slider */
-#gallery {
-  padding: 8rem 0 !important;
-  background: #282627; }
-
-.swiper-container {
-  width: 100% !important;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important; }
-
-.swiper-slide {
-  background-position: center !important;
-  background-size: cover !important;
-  width: 300px !important;
-  height: 300px !important; }
-
 @media (min-width: 576px) {
   .container_menu {
     max-width: 540px;
@@ -432,13 +416,13 @@ body {
     width: 40%;
     /* The company logo */
     /* Footer links */ }
-    .footer-distributed .footer-left h3 {
+    .footer-distributed .footer-left h3.mySignature{
       color: #ffffff;
       font-family: 'Yellowtail', cursive;
       font-size: 48px;
       margin: 0; 
     } 
-      .footer-distributed .footer-left h3 span {
+      .footer-distributed .footer-left h3.mySignature span {
         color: #5383d3; }
     /* .footer-distributed .footer-left .footer-links {
       color: #ffffff;
