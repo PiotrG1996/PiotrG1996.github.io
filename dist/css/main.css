@@ -103,6 +103,9 @@
               transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       color: #ffd152; }
+      .menu .nav-item:focus {
+        outline: none;
+      }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -118,6 +121,7 @@
     .menu .nav-link:hover {
       color: #ffd152;
      }
+     
 
 .nav-item:nth-child(1) {
   -webkit-transition-delay: 0.1s;
