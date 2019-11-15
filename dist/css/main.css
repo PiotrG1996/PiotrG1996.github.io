@@ -8,7 +8,10 @@
   cursor: pointer;
   -webkit-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out; }
+  transition: all 0.5s ease-out;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-tap-highlight-color: transparent;
+}
   .menu-btn .btn-line {
     width: 28px;
     height: 3px;
@@ -61,7 +64,7 @@
   .menu-nav {
     margin: 0;
     padding: 0;
-    padding-bottom: 50px;
+    padding-bottom: 25px;
     background: #1b1a1a;
     list-style: none;
     -webkit-transform: translate3d(0, -100%, 0);
@@ -103,9 +106,7 @@
               transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
       color: #ffd152; }
-      .menu .nav-item:focus {
-        outline: none;
-      }
+     
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -117,7 +118,10 @@
     text-decoration: none;
     -webkit-transition: all 0.5s ease-out;
     -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out; }
+    transition: all 0.5s ease-out;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+  }
     .menu .nav-link:hover {
       color: #ffd152;
      }
@@ -197,6 +201,8 @@
             animation: slideUpScroll 1s cubic-bezier(0.24, 0.45, 0.44, 0.93);
     -webkit-transition: .2s ease-out;
     transition: .2s ease-out;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-tap-highlight-color: transparent;
   }
   
   .scroll-down:hover {
@@ -363,7 +369,7 @@ body {
             transform: translate3d(-100%, 0, 0);
     font-size: 24px; }
   .menu-branding {
-    height: 35vh;
+    height: 30vh;
     -webkit-transform: translate3d(100%, 0, 0);
             transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
@@ -526,6 +532,7 @@ body {
     font-weight: normal;
     margin: 10px; 
   }
+
   hr.hr-style { 
     margin-top: 20px;
     border: 0; 

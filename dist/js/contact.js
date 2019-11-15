@@ -1,3 +1,29 @@
+function HideMenu() {
+  if (HideMenu=true) {
+  $("header")
+    .removeClass("show-nav")
+    .addClass("hide-nav");
+}
+}
+window.onload = HideMenu;
+
+// Contact ghost title
+
+
+$(function() {
+  let text = $(".text");
+  $(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 50) {
+      text.removeClass("hidden");
+    } else {
+      text.addClass("hidden");
+    }
+  });
+});
+
+
 (function($) {
   "use strict";
 
@@ -60,30 +86,18 @@
   }
 })(jQuery);
 
-// Contact ghost title
-$(function() {
-  var text = $(".text");
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
 
-    if (scroll >= 900) {
-      text.removeClass("hidden");
-    } else {
-      text.addClass("hidden");
-    }
-  });
-});
 
-$(function() {
-  var text = $(".text");
-  $(window).scroll(function() {
-    var scroll = $(window).scrollTop();
+// $(function() {
+//   var text = $(".text");
+//   $(window).scroll(function() {
+//     var scroll = $(window).scrollTop();
 
-    if (screen.width < 700 && scroll >= 700) {
-      text.removeClass("hidden");
-    } else {
-      text.addClass("hidden");
-    }
-  });
-});
+//     if (screen.width < 700 && scroll >= 700) {
+//       text.removeClass("hidden");
+//     } else {
+//       text.addClass("hidden");
+//     }
+//   });
+// });
 

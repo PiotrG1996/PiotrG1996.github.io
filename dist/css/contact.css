@@ -193,6 +193,9 @@ iframe {
   list-style: none;
   border-bottom: 0;
 }
+.text .hidden {
+  display: none;
+}
 .text li {
   display: inline-block;
   font-weight: 20;
@@ -214,9 +217,7 @@ iframe {
   opacity: 0;
   max-width: 0;
 }
-.contact-title {
-  display: none;
-}
+
 
 /*****************************************************/
 
