@@ -63,14 +63,17 @@
       <header>
         <div class="container_">
           <nav id="navigation">
+              
+              
             <!-- <a href="#" class="logo">LOGO</a> -->
             <ul class="menu-navigation">
+                
               <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
               <li><a href="about.html"><i class="fas fa-portrait"></i>About me</a></li>
               <li><a href="work.html"><i class="fas fa-briefcase"></i>Projects</a></li>
               <li><a href="contact.html"><i class="fas fa-envelope"></i>Contact me</a></li>
             </ul>
-  
+            
                 <!-- Mobile Menu -->
             <header>
             <div class="menu-area">
@@ -85,6 +88,13 @@
                 <div class="portrait"></div>
               </div>
               <ul class="menu-nav">
+                  <li class="nav-item">
+                      <div class="language" onclick="changeLanguage()">
+                      <a href="#" class="nav-link"> <span class="pl">PL</span></a>
+                      <span style="font-size: 40px;">|</span>
+                      <a href="#" class="nav-link"> <span class="en">EN</span></a>
+                    </div>
+                    </li>
                 <li class="nav-item current">
                   <a href="index.html" class="nav-link"> Home </a>
                 </li>
@@ -102,9 +112,9 @@
             </nav>
           </nav>
         </div>
-        </header>
+        
       </header>
-
+    </header>
    
     <!-- content -->
 
@@ -231,75 +241,40 @@
                 <span class="sr-only">down to about me section</span>
                 </a>
             </div>
-          
         </div>
         </section>
-
-
-
-  
-    
 
     <!-- Swiper -->
 
     <section id="myprojects" class="section-light">
     <div class="section-light">
-       <!-- Swiper -->
+      
 <div class="swiper-container">
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<div class="swiper-content">
-				<div class="hero new-york">
-					<div class="calendar">
-						<span class="date">
-               27
-              </span>
-						<span class="month">
-                MAR
-              </span>
-					</div>
-					<div class="photo-btn">
-            <div class="text">Photos
+				<div class="hero hidden-technology">
+					<div class="technology">
+              
+						<span class="img-icon" onclick="ShowTechnologies()"> 
+                <img src="../dist/img/icons8-settings-50.png" alt="web"> 
+            </span>
+            
             </div>
-            <div class="gallery">
-              <div class="row top">
-              <div class="image one">
-              </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
-              </div>
-                <div class="row middle">
-              <div class="image one">
-              </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
-              </div>
-                <div class="row bottom">
-                <div class="image one">
-              </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
-              </div>
-            </div>
-            </div>
-				</div>
+        
+			</div>
 				<div class="copy">
-					<h1 class="h1-swiper">New York City</h1>
-					<h3 class="h2-swiper">The city that never sleeps.</h3>
+					<h1 class="h1-swiper">IoT - Mobile Robot</h1>
+					<h3 class="h3-swiper">Web application to control omni wheel robot</h3>
 					<p class="swiper">Situated on o – wer Taryn lives here.</p>
 					<div class="footer-swiper">
-						<div class="time">
-							<div><i class="fas fa-clock fa-fw"></i> 6 mins ago</div>
-						</div>
-						<div class="comments">
-							<div><i class="fas fa-comments fa-fw"></i> 39 comments</div>
-						</div>
+            <a href="#" class="animated-button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Read More
+            </a>
 					</div>
 				</div>
 			</div>
@@ -322,41 +297,23 @@
               <div class="row top">
               <div class="image one">
               </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
-              </div>
-                <div class="row middle">
-              <div class="image one">
-              </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
-              </div>
-                <div class="row bottom">
-                <div class="image one">
-              </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
+              
               </div>
             </div>
             </div>
 				</div>
 				<div class="copy">
-					<h1>San Francisco</h1>
-					<h3>The City by the Bay.</h3>
+					<h1 class="h1-swiper">N Queens Problem</h1>
+					<h3 class="h3-swiper">Description of N - queens problem</h3>
 					<p class="swiper">Situated  San  urban park in the country, Golden Gate Park.</p>
 					<div class="footer-swiper">
-						<div class="time">
-							<div><i class="fas fa-clock fa-fw"></i> 12 mins ago</div>
-						</div>
-						<div class="comments">
-							<div><i class="fas fa-comments fa-fw"></i> 64 comments</div>
-						</div>
+            <a href="#" class="animated-button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Read More
+            </a>
 					</div>
 				</div>
 
@@ -380,41 +337,23 @@
               <div class="row top">
               <div class="image one">
               </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
-              </div>
-                <div class="row middle">
-              <div class="image one">
-              </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
-              </div>
-                <div class="row bottom">
-                <div class="image one">
-              </div>
-              <div class="image two">
-              </div>
-              <div class="image three">
-              </div>
+              
               </div>
             </div>
             </div>
 				</div>
 				<div class="copy">
-					<h1>Chicago</h1>
-					<h3>The windy city.</h3>
+					<h1 class="h1-swiper">OpenCV</h1>
+					<h3 class="h3-swiper">Description</h3>
 					<p class="swiper">ichigan. It  States and the Great Lakes region.</p>
 					<div class="footer-swiper">
-						<div class="time">
-							<div><i class="fas fa-clock fa-fw"></i> 18 mins ago</div>
-						</div>
-						<div class="comments">
-							<div><i class="fas fa-comments fa-fw"></i> 102 comments</div>
-						</div>
+            <a href="#" class="animated-button">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              Read More
+            </a>
 					</div>
 				</div>
 
@@ -515,6 +454,19 @@ document.addEventListener(
   },
   false
 );
-    </script>
+
+// swiper cards
+
+// const box = document.querySelector(".hero");
+
+// let box = false;
+
+// function ShowTechnologies() {
+//   if (!box) {
+//   box.classList.remove("hidden-technology");
+//   box.classList.add("shown-technology");
+//   }
+// }
+//     </script>
   </body>
 </html>

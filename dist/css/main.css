@@ -112,7 +112,7 @@
     position: relative;
     font-size: 30px;
     text-transform: uppercase;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
     font-weight: 300;
     color: #fff;
     text-decoration: none;
@@ -146,6 +146,11 @@
   -webkit-transition-delay: 0.4s;
        -o-transition-delay: 0.4s;
           transition-delay: 0.4s; }
+
+          .nav-item:nth-child(5) {
+            -webkit-transition-delay: 0.4s;
+                 -o-transition-delay: 0.4s;
+                    transition-delay: 0.4s; }
 
 .container {
   position: relative;
@@ -621,6 +626,30 @@ a:hover,
 a :focus {
   color: #ffd152; }
 
+  .menu-navigation .language .pl {
+    
+    position: absolute;
+    color: black;
+    font-size: 28px;
+    top: 8%;
+    left: 2%;
+    cursor: pointer;
+  }
+
+  .menu-navigation .language .en {
+    
+    position: absolute;
+    margin-left: 50px;
+    color: black;
+    font-size: 28px;
+    top: 8%;
+    left: 5%;
+    cursor: pointer;
+  }
+  .menu-navigation .language:active, .menu-navigation .language:focus {
+    color: gold;
+  }
+    
 .menu-navigation a {
   display: inline-block;
   position: relative;
@@ -629,7 +658,7 @@ a :focus {
   -o-transition: color 0.35s ease;
   transition: color 0.35s ease;
   margin: 10px;
-  font-size: 20px;
+  font-size: 28px;
   color: #ffd152; }
 
 .menu-navigation a:before {
@@ -672,7 +701,7 @@ a :focus {
   transition: all 0s ease; }
 
 .menu-navigation a i {
-  font-size: 20px; }
+  font-size: 28px; }
 
 header {
   position: fixed;
@@ -845,8 +874,11 @@ ul.menu-navigation {
 
 
 #map {
-  height: 500px;
-  width: 100%;
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
   border: 2px solid #ffd152; }
 
 .gm-style .controls {
@@ -959,6 +991,7 @@ ul.menu-navigation {
 .gm-style .controls.fullscreen-control.is-fullscreen .fullscreen-control-icon.fullscreen-control-bottom-right {
   border-width: 2px 0 0 2px; }
 
+  /* Default scrollbar */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;

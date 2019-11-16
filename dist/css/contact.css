@@ -118,7 +118,7 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Contact ]*/
 
-.container-contact100 {
+.container-contactMe {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -136,7 +136,7 @@ iframe {
   background: #333333;
 }
 
-.wrap-contact100 {
+.wrap-contactMe {
   width: 1163px;
   background: #282627;
   border-radius: 10px;
@@ -157,22 +157,22 @@ iframe {
 
 /*------------------------------------------------------------------
 [  ]*/
-.contact100-pic {
+.contactMe-pic {
   width: 310px;
   padding-top: 55px;
 }
 
-.contact100-pic img {
+.contactMe-pic img {
   max-width: 100%;
 }
 
 /*------------------------------------------------------------------
 [  ]*/
-.contact100-form {
+.contactMe-form {
   width: 390px;
 }
 
-.contact100-form-title {
+.contactMe-form-title {
   display: block;
   font-family: Montserrat-ExtraBold;
   font-size: 25px;
@@ -221,7 +221,7 @@ iframe {
 
 /*****************************************************/
 
-input.input100 {
+input.inputMe {
   height: 50px;
   border-radius: 25px;
   padding: 0 30px 0 50px;
@@ -230,10 +230,10 @@ input.input100 {
 }
 
 /* Fix auto complete in input forms*/
-  input.input100:-webkit-autofill,
-  input.input100:-webkit-autofill:hover, 
-  input.input100:-webkit-autofill:focus, 
-  input.input100:-webkit-autofill:active  {
+  input.inputMe:-webkit-autofill,
+  input.inputMe:-webkit-autofill:hover, 
+  input.inputMe:-webkit-autofill:focus, 
+  input.inputMe:-webkit-autofill:active  {
     -webkit-box-shadow: 0 0 0 30px #333 inset !important;
     border: 5px solid black !important;
 }
@@ -244,11 +244,11 @@ input:-webkit-autofill {
 } 
 
 /* ********************************* */
-input.input100[name="email"] {
+input.inputMe[name="email"] {
   padding: 0 30px 0 54px;
 }
 
-textarea.input100 {
+textarea.inputMe {
   min-height: 150px;
   border-radius: 25px;
   padding: 14px 30px;
@@ -256,18 +256,18 @@ textarea.input100 {
 }
 
 /*---------------------------------------------*/
-.wrap-input100 {
+.wrap-inputMe {
   position: relative;
   width: 100%;
   z-index: 1;
   margin-bottom: 10px;
 }
 
-.input100 {
+.inputMe {
   display: block;
   width: 100%;
   background: #333;
-  font-family: Montserrat-Bold;
+  /* font-family: Montserrat-Bold; */
   font-size: 15px;
   line-height: 1.5;
   color: #fae196;
@@ -275,7 +275,7 @@ textarea.input100 {
 
 /*------------------------------------------------------------------
 [ Focus ]*/
-.focus-input100 {
+.focus-inputMe {
   display: block;
   position: absolute;
   border-radius: 25px;
@@ -289,7 +289,7 @@ textarea.input100 {
   color: rgba(255, 209, 82, 0.8);
 }
 
-.input100:focus + .focus-input100 {
+.inputMe:focus + .focus-inputMe {
   -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
   animation: anim-shadow 0.5s ease-in-out forwards;
 }
@@ -310,7 +310,7 @@ textarea.input100 {
   }
 }
 
-.symbol-input100 {
+.symbol-inputMe {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,14 +333,14 @@ textarea.input100 {
   transition: all 0.4s;
 }
 
-.input100:focus + .focus-input100 + .symbol-input100 {
+.inputMe:focus + .focus-inputMe + .symbol-inputMe {
   color: rgba(255, 209, 82, 1);
   padding-left: 22px;
 }
 
 /*------------------------------------------------------------------
 [ Button ]*/
-.container-contact100-form-btn {
+.container-contactMe-form-btn {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -353,7 +353,7 @@ textarea.input100 {
   padding-top: 20px;
 }
 
-.contact100-form-btn {
+.contactMe-form-btn {
   border: 5px solid black;
   width: 100%;
   height: 50px;
@@ -379,7 +379,7 @@ textarea.input100 {
   transition: all 0.4s;
 }
 
-.contact100-form-btn:hover {
+.contactMe-form-btn:hover {
   background: rgba(255, 209, 82, 0.8);
 }
 
@@ -387,49 +387,49 @@ textarea.input100 {
 [ Responsive ]*/
 
 @media (max-width: 1200px) {
-  .contact100-pic {
+  .contactMe-pic {
     width: 33.5%;
   }
 
-  .contact100-form {
+  .contactMe-form {
     width: 44%;
   }
 }
 
 @media (max-width: 992px) {
-  .wrap-contact100 {
+  .wrap-contactMe {
     padding: 110px 80px 157px 90px;
   }
 
-  .contact100-pic {
+  .contactMe-pic {
     width: 35%;
   }
 
-  .contact100-form {
+  .contactMe-form {
     width: 55%;
   }
 }
 
 @media (max-width: 768px) {
-  .wrap-contact100 {
+  .wrap-contactMe {
     padding: 110px 80px 157px 80px;
   }
 
-  .contact100-pic {
+  .contactMe-pic {
     display: none;
   }
 
-  .contact100-form {
+  .contactMe-form {
     width: 100%;
   }
-  .wrap-contact100 {
+  .wrap-contactMe {
     border: 5px solid black;
   }
   
 }
 
 @media (max-width: 576px) {
-  .wrap-contact100 {
+  .wrap-contactMe {
     max-height: 90%;
     padding: 100px 15px 157px 15px;
   }
