@@ -54,8 +54,33 @@ p.p-swiper {
   height: 175px;
   position: relative;
   box-sizing: border-box;
-
+  
 }
+
+.swiper-content .hero.hidden-technologies {
+  position: inherit ;
+  opacity: 1;
+  transition: opacity 2.25s ease-in;
+  -moz-transition: opacity 2.25s ease-in;
+  -webkit-transition: opacity 2.25s ease-in;
+  background: linear-gradient(22deg, rgba(51,51,51,1) 0%, rgba(120,115,105,1) 50%, rgba(191,151,93,1) 100%)
+  /* background: url("https://daytripsontario.files.wordpress.com/2017/03/img_6859-copy.jpg"); */
+  /* background-position: center;
+  background-size: cover; */
+}
+
+.swiper-content .hero.shown-technologies {
+  position: inherit;
+  opacity: 1;
+  transition: opacity 2.25s ease-in;
+  -moz-transition: opacity 2.25s ease-in;
+  -webkit-transition: opacity 2.25s ease-in;
+ background-image:url(../img/icons8-html-5-50.png);
+ background-position: center;
+ background-size: cover;
+ 
+}
+
 .swiper-content .hero .technology {
   position: relative;
   display: flex;
@@ -68,38 +93,37 @@ p.p-swiper {
   border-radius: 50%;
   margin-right: 15px;
   margin-top: 15px;
-  
 }
 .swiper-content .hero .technology .img-icon img{
   display: flex;
+  outline: none;
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
   width: 50px;
   height: 50px;
-
   cursor: pointer;
-  -moz-transition: transform 1s;
-  -webkit-transition: transform 1s;
-  transition: transform 1s;
+  /*Filter styles*/
+ filter: saturate(10); 
+ filter: grayscale(100%); 
+ /* filter: contrast(160%); 
+ filter: brightness(0.25); 
+ filter: blur(3px); 
+ filter: invert(100%); 
+ filter: sepia(100%); 
+ filter: hue-rotate(180deg); 
+ filter: opacity(50%);  */
+  
  
 }
 
-.swiper-content .hero .technology .img-icon img:hover {
+.swiper-content .hero .technology .img-icon img:hover,
+.swiper-content .hero .technology .img-icon img.clicked {
   display: flex;
   transform: rotate(365deg);
   -moz-transform: rotate(365deg);
   -webkit-transform: rotate(365deg);
-  
 }
 
-.swiper-content .hero.hidden-technology {
-  background: black;
-  background: url("https://daytripsontario.files.wordpress.com/2017/03/img_6859-copy.jpg");
-  background-position: center;
-  background-size: cover;
-}
-
-.swiper-content .hero.shown-technologies {
-  background: yellow;
-}
 .swiper-content .copy {
   padding: 20px;
 }
@@ -124,11 +148,11 @@ p.p-swiper {
   line-height: 1.3rem;
 } */
 
-/* .swiper-content .hero .photo-btn {
+.swiper-content .hero .photo-btn {
   position: absolute;
   bottom: 0;
-  width: 140px;
-  height: 40px;
+  width: 100%;
+  height: 100%;
   background-color: #ffd152;
   border: none;
   font-size: 1.2rem;
@@ -139,13 +163,13 @@ p.p-swiper {
   display: flex;
   align-content: center;
   justify-content: center;
-} */
+}
 
-/* 
+
 .swiper-content .hero .photo-btn:hover  {
   display: flex;
-} */
-/* .swiper-content .hero .photo-btn .text {
+} 
+.swiper-content .hero .photo-btn .text {
   text-align: center;
   line-height: 40px;
 }
@@ -153,11 +177,13 @@ p.p-swiper {
   width: 100%;
   display: none;
   flex-direction: column;
+  background: teal;
 }
 .swiper-content .hero .photo-btn .gallery .row {
   width: 100%;
   height: 34%;
   display: flex;
+  background: yellow;
 }
 .swiper-content .hero .photo-btn .gallery .row .image {
   opacity: 0.6;
@@ -165,11 +191,11 @@ p.p-swiper {
   height: 100%;
   display: inline-block;
   transition: 0.2s all;
-} */
-/* .swiper-content .hero .photo-btn .gallery .row .image:hover {
+}
+.swiper-content .hero .photo-btn .gallery .row .image:hover {
   opacity: 1;
   transition: 0.2s all;
-} */
+}
 
 
 .swiper-pagination-bullet-active {

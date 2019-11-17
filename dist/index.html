@@ -48,6 +48,85 @@
 
   <body id="bg-img">
 
+    <style type="text/css">
+      #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      filter:alpha(opacity=70);
+      -moz-opacity:0.7;
+      -khtml-opacity: 0.7;
+      opacity: 0.7;
+      z-index: 100;
+      display: none;
+      }
+      .cnt223 a{
+      text-decoration: none;
+      }
+      .popup{
+        padding-top: 20%;
+        padding-left: 5px;
+        padding-right: 5px;
+      height: 100%;
+      width: 100%;
+      margin: 0 auto;
+      display: none;
+      position: fixed;
+      z-index: 101;
+      background: rgba(0, 0, 0, 0.9);
+     
+      }
+      .cnt223{
+      
+      min-width: 300px;
+      width: 90%;
+      min-height: 150px;
+      margin: 100px auto;
+      background: #f3f3f3;
+      position: relative;
+      z-index: 103;
+      padding: 15px 35px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px #000;
+      }
+      .cnt223 p{
+      clear: both;
+          color: #555555;
+          /* text-align: justify; */
+          font-size: 20px;
+          font-family: sans-serif;
+      }
+      .cnt223 p a{
+      color: #d91900;
+      font-weight: bold;
+      }
+      .cnt223 .x{
+      float: right;
+      height: 35px;
+      left: 22px;
+      position: relative;
+      top: -25px;
+      width: 34px;
+      }
+      .cnt223 .x:hover{
+      cursor: pointer;
+      }
+      </style>
+
+
+<div class='popup'>
+  <div class='cnt223'>
+  <h1>Website under construction</h1>
+  <p>
+  Very important notice, this website is not finished yet which means bugs are around you.
+  <br/>
+  <br/>
+  <a href='' class='close'>Close</a>
+  </p>
+  </div>
+  </div>
 <!-- Scrollbar -->
       <div class="scrollbar" id="style-2">
           <div class="force-overflow"></div>
@@ -253,11 +332,11 @@
 	<div class="swiper-wrapper">
 		<div class="swiper-slide">
 			<div class="swiper-content">
-				<div class="hero hidden-technology">
+				<div class="hero hidden-technologies">
 					<div class="technology">
               
-						<span class="img-icon" onclick="ShowTechnologies()"> 
-                <img src="../dist/img/icons8-settings-50.png" alt="web"> 
+						<span class="img-icon"> 
+                <img src="./img/icons8-settings-50.png" alt="web"> 
             </span>
             
             </div>
@@ -278,34 +357,24 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="swiper-slide">
+    </div>
+    
+    <div class="swiper-slide">
 			<div class="swiper-content">
-				<div class="hero san-fran">
-					<div class="calendar">
-						<span class="date">
-               28
-              </span>
-						<span class="month">
-                MAR
-              </span>
-					</div>
-					<div class="photo-btn">
-            <div class="text">Photos
-            </div>
-            <div class="gallery">
-              <div class="row top">
-              <div class="image one">
-              </div>
+				<div class="hero hidden-technologies">
+					<div class="technology">
               
-              </div>
+						<span class="img-icon"> 
+                <img src="./img/icons8-settings-50.png" alt="web"> 
+            </span>
+            
             </div>
-            </div>
-				</div>
+        
+			</div>
 				<div class="copy">
-					<h1 class="h1-swiper">N Queens Problem</h1>
-					<h3 class="h3-swiper">Description of N - queens problem</h3>
-					<p class="swiper">Situated  San  urban park in the country, Golden Gate Park.</p>
+					<h1 class="h1-swiper">IoT - Mobile Robot</h1>
+					<h3 class="h3-swiper">Web application to control omni wheel robot</h3>
+					<p class="swiper">Situated on o – wer Taryn lives here.</p>
 					<div class="footer-swiper">
             <a href="#" class="animated-button">
               <span></span>
@@ -316,36 +385,25 @@
             </a>
 					</div>
 				</div>
-
 			</div>
-		</div>
-		<div class="swiper-slide">
+    </div>
+    
+    <div class="swiper-slide">
 			<div class="swiper-content">
-				<div class="hero chicago">
-					<div class="calendar">
-						<span class="date">
-               29
-              </span>
-						<span class="month">
-                MAR
-              </span>
-					</div>
-					<div class="photo-btn">
-            <div class="text">Photos
-            </div>
-            <div class="gallery">
-              <div class="row top">
-              <div class="image one">
-              </div>
+				<div class="hero hidden-technologies">
+					<div class="technology">
               
-              </div>
+						<span class="img-icon"> 
+                <img src="./img/icons8-settings-50.png" alt="web"> 
+            </span>
+            
             </div>
-            </div>
-				</div>
+        
+			</div>
 				<div class="copy">
-					<h1 class="h1-swiper">OpenCV</h1>
-					<h3 class="h3-swiper">Description</h3>
-					<p class="swiper">ichigan. It  States and the Great Lakes region.</p>
+					<h1 class="h1-swiper">IoT - Mobile Robot</h1>
+					<h3 class="h3-swiper">Web application to control omni wheel robot</h3>
+					<p class="swiper">Situated on o – wer Taryn lives here.</p>
 					<div class="footer-swiper">
             <a href="#" class="animated-button">
               <span></span>
@@ -356,9 +414,9 @@
             </a>
 					</div>
 				</div>
-
 			</div>
-		</div>
+    </div>
+    
 	</div>
 	<!-- Add Pagination -->
 	<div class="swiper-pagination"></div>
@@ -457,16 +515,36 @@ document.addEventListener(
 
 // swiper cards
 
-// const box = document.querySelector(".hero");
+$('.hero').click(function() {
+    $(this).toggleClass('hidden-technologies');
+    $(this).toggleClass('shown-technologies');
+});
 
-// let box = false;
+$('.icon-img img').on('click', function() {
+    $(this).toggleClass('clicked');
+});
 
-// function ShowTechnologies() {
-//   if (!box) {
-//   box.classList.remove("hidden-technology");
-//   box.classList.add("shown-technology");
-//   }
-// }
-//     </script>
+     </script>
+
+
+<script type='text/javascript'>
+$(function(){
+var overlay = $('<div id="overlay"></div>');
+overlay.show();
+overlay.appendTo(document.body);
+$('.popup').show();
+$('.close').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+
+$('.x').click(function(){
+$('.popup').hide();
+overlay.appendTo(document.body).remove();
+return false;
+});
+});
+</script>
   </body>
 </html>
