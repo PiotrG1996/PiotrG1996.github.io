@@ -41,6 +41,18 @@
     
   </head>
 
+<!-- Hide NavMenu on load -->
+<script type="text/javascript">
+  function HideMenu() {
+    if (HideMenu=true) {
+    $("header")
+      .removeClass("show-nav")
+      .addClass("hide-nav");
+  }
+}
+  window.onload = HideMenu;
+  </script>
+  
   <body>
     
       <!-- Load Animation -->
@@ -49,7 +61,7 @@
       </div>
   
   <!-- Main Navigation Menu-->
-  <header>
+  <header class="show-nav">
     <div class="container_">
       <nav id="navigation">
         <!-- <a href="#" class="logo">LOGO</a> -->
@@ -61,46 +73,48 @@
         </ul>
 
                 <!-- Mobile Menu -->
-                <header>
-                  <div class="menu-area">
-                    <div class="menu-btn">
-                      <div class="btn-line"></div>
-                      <div class="btn-line"></div>
-                      <div class="btn-line"></div>
-                    </div>
-                  </div>
-                  <nav class="menu">
-                    <div class="menu-branding">
-                      <div class="portrait"></div>
-                    </div>
-                    <ul class="menu-nav">
-                      <li class="nav-item">
-                        <div class="language" onclick="changeLanguage()">
-                          <a href="#" class="nav-link" > <span id="pl_" onclick="HighlightLanguagePL()"> PL </span></a>
-                          <span style="font-size: 40px;">|</span>
-                          <a href="#" class="nav-link"> <span id="en_" onclick="HighlightLanguageEN()"> EN </span></a>
-                          <span style="font-size: 40px;">|</span>
-                              <a href="#" class="nav-link"> <span id="ger_" onclick="HighlightLanguageGER()">GER</span></a>
-                        </div>
-                        </li>
-                      <li class="nav-item">
-                        <a href="index.html" class="nav-link"> Home </a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="about.html" class="nav-link"> About me</a>
-                      </li>
-                      <li class="nav-item">
-                        <a href="work.html" class="nav-link"> Projects</a>
-                      </li>
-                      <li class="nav-item current">
-                        <a href="contact.html" class="nav-link"> Contact me</a>
-                      </li>
-                    </ul>
-                  </nav>
-                </nav>
+            <header>
+              <div class="menu-area">
+                <div class="menu-btn">
+                  <div class="btn-line"></div>
+                  <div class="btn-line"></div>
+                  <div class="btn-line"></div>
+                </div>
               </div>
-            </header>
-          </header>
+              <nav class="menu">
+                <div class="menu-branding">
+                  <div class="portrait"></div>
+                </div>
+                <ul class="menu-nav">
+                    <li class="nav-item">
+                      <div class="language" onclick="changeLanguage()">
+                        <a href="#" class="nav-link" > <span id="pl_" onclick="HighlightLanguagePL()"> PL </span></a>
+                        <span style="font-size: 40px;">|</span>
+                        <a href="#" class="nav-link"> <span id="en_" onclick="HighlightLanguageEN()"> EN </span></a>
+                        <span style="font-size: 40px;">|</span>
+                            <a href="#" class="nav-link"> <span id="ger_" onclick="HighlightLanguageGER()">GER</span></a>
+                      </div>
+                      </li>
+                  <li class="nav-item current">
+                    <a href="index.html" class="nav-link"> Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="about.html" class="nav-link"> About me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="work.html" class="nav-link"> Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="contact.html" class="nav-link"> Contact me</a>
+                  </li>
+                </ul>
+              </nav>
+            </nav>
+          </div>
+          
+        </header>
+      </header>
+     
 
 <section id="id-contact" class="section-light">
   <div class="section-light">

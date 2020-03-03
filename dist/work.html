@@ -40,7 +40,18 @@
     <link rel="stylesheet" href="css/main.css" />
     <title>Projects</title>
   </head>
-
+<!-- Hide NavMenu on load -->
+<script type="text/javascript">
+  function HideMenu() {
+    if (HideMenu=true) {
+    $("header")
+      .removeClass("show-nav")
+      .addClass("hide-nav");
+  }
+}
+  window.onload = HideMenu;
+  </script>
+  
   <body>
     
 <!-- Scrollbar -->
@@ -51,21 +62,11 @@
     <span class="loader"><span class="loader-inner"></span></span>
   </div>
 
-<!-- Hide NavMenu on load -->
-  <script type="text/javascript">
-    function HideMenu() {
-      if (HideMenu=true) {
-      $("header")
-        .removeClass("show-nav")
-        .addClass("hide-nav");
-    }
-  }
-    window.onload = HideMenu;
-    </script>
+
 
 <!-- Main Navigation Menu-->
-<header>
-<div class="container_">
+<header class="show-nav">
+  <div class="container_">
   <nav id="navigation">
     <!-- <a href="#" class="logo">LOGO</a> -->
     <ul class="menu-navigation">
