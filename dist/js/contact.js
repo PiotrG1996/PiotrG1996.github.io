@@ -1,15 +1,3 @@
-// Show Ghost title and hide nav menu
-function ShowFormTitle() {
-  let text = $(".text");
-  if ((ShowFormTitle = true)) {
-    $(".text").removeClass("hidden");
-    $("header")
-      .removeClass("show-nav")
-      .addClass("hide-nav");
-  }
-}
-window.onload = ShowFormTitle;
-
 (function($) {
   "use strict";
 
