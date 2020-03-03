@@ -168,10 +168,12 @@
               </div>
               <ul class="menu-nav">
                   <li class="nav-item">
-                      <div class="language" onclick="changeLanguage()">
-                      <a href="#" class="nav-link"> <span class="pl">PL</span></a>
+                    <div class="language" onclick="changeLanguage()">
+                      <a href="#" class="nav-link" > <span id="pl_" onclick="HighlightLanguagePL()"> PL </span></a>
                       <span style="font-size: 40px;">|</span>
-                      <a href="#" class="nav-link"> <span class="en">EN</span></a>
+                      <a href="#" class="nav-link"> <span id="en_" onclick="HighlightLanguageEN()"> EN </span></a>
+                      <span style="font-size: 40px;">|</span>
+                          <a href="#" class="nav-link"> <span id="ger_" onclick="HighlightLanguageGER()">GER</span></a>
                     </div>
                     </li>
                 <li class="nav-item current">
@@ -217,7 +219,6 @@
           <span class="scroll-down__line"></span>
           <span class="scroll-down__line"></span>
           <span class="scroll-down__line"></span>
-          <span class="sr-only">down to about me section</span>
           </a>
       </div>
     </div>
@@ -250,7 +251,6 @@
             <span class="scroll-down__line"></span>
             <span class="scroll-down__line"></span>
             <span class="scroll-down__line"></span>
-            <span class="sr-only">down to about me section</span>
             </a>
         </div>
       
@@ -282,7 +282,6 @@
               <span class="scroll-down__line"></span>
               <span class="scroll-down__line"></span>
               <span class="scroll-down__line"></span>
-              <span class="sr-only">down to about me section</span>
               </a>
           </div>
         </div>
@@ -522,11 +521,12 @@
       <br>
       <hr class="hr-style">
 
-      <p class="footer-company-name">Piotr Gapski &copy; All rights reserved 2019</p>
+      <p class="footer-company-name">Piotr Gapski &copy; All rights reserved 2020</p>
     </footer>
 
     <!-- <script type="text/javascript" src="/dist/js/fullpage.min.js"></script> -->
     <script src="js/main.js"></script>
+    <script src="js/lang.js"></script>
 
 <!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "easeInOutCubic". -->
 <!-- <script src="/dist/js/easings.min.js"></script> -->
@@ -601,6 +601,8 @@ overlay.appendTo(document.body).remove();
 return false;
 });
 });
+
+
 </script>
   </body>
 </html>
