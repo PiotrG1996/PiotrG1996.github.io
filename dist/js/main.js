@@ -17,9 +17,8 @@ function toggleMenu() {
     menu.classList.add("show");
     menuNav.classList.add("show");
     menuBranding.classList.add("show");
-    navItems.forEach(item => item.classList.add("show"));
-    body.style.overflow = 'hidden';
-
+    navItems.forEach((item) => item.classList.add("show"));
+    body.style.overflow = "hidden";
 
     // Set Menu State
     showMenu = true;
@@ -28,9 +27,8 @@ function toggleMenu() {
     menu.classList.remove("show");
     menuNav.classList.remove("show");
     menuBranding.classList.remove("show");
-    navItems.forEach(item => item.classList.remove("show"));
-    body.style.overflow = 'auto';
-
+    navItems.forEach((item) => item.classList.remove("show"));
+    body.style.overflow = "auto";
 
     // Set Menu State
     showMenu = false;
@@ -45,11 +43,11 @@ let lastScrollTop = 0;
 let delta = 5;
 let navbarHeight = $("header").outerHeight();
 
-$(window).scroll(function(event) {
+$(window).scroll(function (event) {
   didScroll = true;
 });
 
-setInterval(function() {
+setInterval(function () {
   if (didScroll) {
     hasScrolled();
     didScroll = false;
@@ -66,34 +64,23 @@ function hasScrolled() {
   // This is necessary so you never see what is "behind" the navbar.
   if (st > lastScrollTop && st > navbarHeight) {
     // Scroll Down
-    $("header")
-      .removeClass("show-nav")
-      .addClass("hide-nav");
+    $("header").removeClass("show-nav").addClass("hide-nav");
     $(".nav-toggle").removeClass("open");
     $(".menu-navigation").removeClass("collapse");
 
-
     // Mobile menu fix
     if (showMenu && didScroll) {
-      $("header")
-        .removeClass("hide-nav")
-        .addClass("show-nav");
-        body.style.overflow = 'hidden';
+      $("header").removeClass("hide-nav").addClass("show-nav");
+      body.style.overflow = "hidden";
     }
-
   } else {
     // Scroll Up
     if (st + $(window).height() < $(document).height()) {
-      $("header")
-        .removeClass("hide-nav")
-        .addClass("show-nav");
-
+      $("header").removeClass("hide-nav").addClass("show-nav");
     }
   }
   lastScrollTop = st;
 }
-
-
 
 // smooth scroll between sections
 // $('a[href^="#"]').on("click", function(event) {

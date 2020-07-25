@@ -26,8 +26,8 @@ p.p-swiper {
 
 .swiper-container {
   width: 100%;
-  padding-top: 20%;
-  padding-bottom: 20%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .swiper-slide {
@@ -76,7 +76,7 @@ p.p-swiper {
   transition: opacity 2.25s ease-in;
   -moz-transition: opacity 2.25s ease-in;
   -webkit-transition: opacity 2.25s ease-in;
-  background-image: url(../img/icons8-html-5-50.png);
+  /* background-image: url(../img/icons8-html-5-50.png); */
   background-position: center;
   background-size: cover;
 }
